@@ -34,7 +34,7 @@ def calc_factorial_with_recursion(value: int) -> int:
     if value == 1 or value == 0:
         return 1
 
-    return value * calc_factorial_with_normal_loop(value - 1)
+    return value * calc_factorial_with_recursion(value - 1)
 
 
 # 3. Python shortcut(using lambda)
